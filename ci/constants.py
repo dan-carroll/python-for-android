@@ -54,7 +54,6 @@ BROKEN_RECIPES_PYTHON2 = set([
     'websocket-client',
     'zeroconf',
     'zope',
-    'matplotlib',  # https://github.com/kivy/python-for-android/issues/1900
 ])
 BROKEN_RECIPES_PYTHON3 = set([
     'brokenrecipe',
@@ -65,10 +64,8 @@ BROKEN_RECIPES_PYTHON3 = set([
     # IndexError: list index out of range
     'secp256k1',
     'ffpyplayer',
-    'icu',
     # requires `libpq-dev` system dependency e.g. for `pg_config` binary
     'psycopg2',
-    'protobuf_cpp',
     # most likely some setup in the Docker container, because it works in host
     'pyjnius', 'pyopenal',
     # SyntaxError: invalid syntax (Python2)
@@ -76,7 +73,6 @@ BROKEN_RECIPES_PYTHON3 = set([
     # mpmath package with a version >= 0.19 required
     'sympy',
     'vlc',
-    'matplotlib',  # https://github.com/kivy/python-for-android/issues/1900
 ])
 
 BROKEN_RECIPES = {
